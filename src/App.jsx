@@ -281,7 +281,8 @@ export default function Portfolio() {
               
               <div className="flex gap-4 justify-center">
                 <a
-                  href="/Fahim_Shahriyear_Senior_Software_Engineer_CV.pdf"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1ajbbIRW-EzpDVO1YrTWyaP3lCsjU_-cx/view?usp=sharing"
                   download
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-zinc-700 text-white font-semibold hover:border-zinc-500 transition"
                 >
@@ -289,7 +290,8 @@ export default function Portfolio() {
                   Download CV
                 </a>
                 <a
-                  href="/Fahim_Shahriyear_Senior_Software_Engineer_Cover.pdf"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1Il6KhRQwViGx7YIvrWxK9t57dmpT1MUl/view?usp=sharing"
                   download
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-zinc-700 text-white font-semibold hover:border-zinc-500 transition"
                 >
