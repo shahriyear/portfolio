@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import {
   GitBranch,
+  Copy,
   ExternalLink,
   Mail,
+  Phone,
   Activity,
   ShieldCheck,
   Server,
@@ -10,6 +13,7 @@ import {
 } from "lucide-react";
 
 export default function Portfolio() {
+  const [copied, setCopied] = useState(false);
   const skills = [
     "Fintech Infrastructure",
     "Payment Systems",
@@ -258,12 +262,24 @@ export default function Portfolio() {
           </p>
 
           <div className="space-y-6">
-            <div className="text-2xl font-mono text-white">
-              shahriyear@gmail.com
+            <div className="flex items-center justify-center gap-2 text-2xl font-mono text-white cursor-pointer hover:text-zinc-300 transition-colors relative group"
+               onClick={() => {
+                 navigator.clipboard.writeText('shahriyear@gmail.com');
+                 setCopied(true);
+                 setTimeout(() => setCopied(false), 2000);
+               }}
+               title="Click to copy email">
+              <Copy className={`w-5 h-5 transition-colors ${copied ? 'text-emerald-400' : 'text-zinc-400'}`} />
+              <span className={`transition-colors ${copied ? 'text-emerald-400' : 'text-white'}`}>
+                {copied ? 'Copied!' : 'shahriyear@gmail.com'}
+              </span>
+              <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-zinc-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Click to copy
+              </span>
             </div>
             
             <div className="flex flex-col gap-4">
-              <div className="flex gap-4 justify-center">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <a
                   href="mailto:shahriyear@gmail.com"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:opacity-90 transition"
@@ -271,12 +287,14 @@ export default function Portfolio() {
                   <Mail className="w-5 h-5" />
                   Send Email
                 </a>
-                <button
-                  onClick={() => navigator.clipboard.writeText('shahriyear@gmail.com')}
+                <a
+                  href="https://wa.me/8801749798295"
+                  target="_blank"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl border border-zinc-700 text-white font-semibold hover:border-zinc-500 transition"
                 >
-                  Copy Email
-                </button>
+                  <Phone className="w-5 h-5" />
+                  WhatsApp
+                </a>
               </div>
               
               <div className="flex gap-4 justify-center">
