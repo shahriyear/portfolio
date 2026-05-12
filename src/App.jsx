@@ -282,7 +282,7 @@ export default function Portfolio() {
               <div className="flex gap-4 justify-center">
                 <a
                   target="_blank"
-                  href="https://drive.google.com/file/d/1ajbbIRW-EzpDVO1YrTWyaP3lCsjU_-cx/view?usp=sharing"
+                  href="https://drive.google.com/file/d/12IotpsTjq1POasoEkfyczakHowvid3j9/view?usp=sharing"
                   download
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-zinc-700 text-white font-semibold hover:border-zinc-500 transition"
                 >
