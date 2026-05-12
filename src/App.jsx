@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import {
-  GitBranch,
+  Code,
   Copy,
+  User,
   ExternalLink,
   Mail,
   Phone,
@@ -93,7 +94,7 @@ export default function Portfolio() {
                 target="_blank"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white text-black font-semibold hover:opacity-90 transition"
               >
-                <ExternalLink className="w-5 h-5" />
+                <User className="w-5 h-5" />
                 LinkedIn
               </a>
 
@@ -102,7 +103,7 @@ export default function Portfolio() {
                 target="_blank"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-zinc-700 hover:border-zinc-500 transition"
               >
-                <GitBranch className="w-5 h-5" />
+                <Code className="w-5 h-5" />
                 GitHub
               </a>
             </div>
