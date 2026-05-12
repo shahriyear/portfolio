@@ -3,6 +3,8 @@ export default function Portfolio() {
     "Fintech Infrastructure",
     "Payment Systems",
     "Distributed Systems",
+    "System Design",
+    "Clean Architecture",
     "PCI DSS",
     "Reliability Engineering",
     "Symfony",
