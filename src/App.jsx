@@ -257,13 +257,48 @@ export default function Portfolio() {
             distributed systems, and reliability-focused engineering roles.
           </p>
 
-          <a
-            href="mailto:shahriyear@gmail.com"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:opacity-90 transition"
-          >
-            <Mail className="w-5 h-5" />
-            Contact Me
-          </a>
+          <div className="space-y-6">
+            <div className="text-2xl font-mono text-white">
+              shahriyear@gmail.com
+            </div>
+            
+            <div className="flex flex-col gap-4">
+              <div className="flex gap-4 justify-center">
+                <a
+                  href="mailto:shahriyear@gmail.com"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:opacity-90 transition"
+                >
+                  <Mail className="w-5 h-5" />
+                  Send Email
+                </a>
+                <button
+                  onClick={() => navigator.clipboard.writeText('shahriyear@gmail.com')}
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl border border-zinc-700 text-white font-semibold hover:border-zinc-500 transition"
+                >
+                  Copy Email
+                </button>
+              </div>
+              
+              <div className="flex gap-4 justify-center">
+                <a
+                  href="/Fahim_Shahriyear_Senior_Software_Engineer_CV.pdf"
+                  download
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-zinc-700 text-white font-semibold hover:border-zinc-500 transition"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  Download CV
+                </a>
+                <a
+                  href="/Fahim_Shahriyear_Senior_Software_Engineer_Cover.pdf"
+                  download
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-zinc-700 text-white font-semibold hover:border-zinc-500 transition"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  Download Cover Letter
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
